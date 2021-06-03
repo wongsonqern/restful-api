@@ -28,7 +28,7 @@ public class PostController {
 		return postList;
 	}
 	
-	@GetMapping(path="/users/{id}/posts/{post_id}")
+	@GetMapping(path="/users/{id}/posts/{post_id}") //test
 	public Post retrieveDetailofPost(@PathVariable Integer id, @PathVariable Integer postId)
 	{
 		Post post = postDaoService.retrieveDetailofPost(postId);
